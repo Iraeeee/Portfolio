@@ -18,7 +18,7 @@ def fetch(id_, field):
     item = db.posts.find_one({"title": id_}, {field: 1})
     for key, item in item.items(): pass
 
-    if debugMode == True: utils.logs.dB.fetch(id_, field, item)
+    if debugMode: utils.logs.dB.fetch(id_, field, item)
 
     return item
 
@@ -31,14 +31,14 @@ def update(id_, field, item):
 			}, upsert=True
 		)
     
-    if debugMode == True: utils.logs.dB.update(id_, field, item)
+    if debugMode: utils.logs.dB.update(id_, field, item)
 
 def isIndB(id_):
     
     if posts.count_documents({"title": id_}) == 0: bool = False
     else: bool = True
     
-    if debugMode == True: utils.logs.dB.check(id_, bool)
+    if debugMode: utils.logs.dB.check(id_, bool)
 
     return bool
 
@@ -46,7 +46,7 @@ def delete(id_):
 
     posts.delete_one({"title": id_})
 
-    if debugMode == True: utils.logs.dB.delete(id_)
+    if debugMode: utils.logs.dB.delete(id_)
 
 def addUserTodB(userWebSiteName, userMail, userPassword, userSurname, userName, userAge):
     
@@ -60,4 +60,4 @@ def addUserTodB(userWebSiteName, userMail, userPassword, userSurname, userName, 
         }
     posts.insert_one(dataToUpload)
     
-    if debugMode == True: utils.logs.dB.creation(userWebSiteName)
+    if debugMode: utils.logs.dB.creation(userWebSiteName)

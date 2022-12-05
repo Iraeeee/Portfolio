@@ -1,6 +1,8 @@
 // Importing modules
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./App.scss";
+import Layout from "./components/Layout/Layout";
+import { Routes, BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
 	// usestate for setting a javascript
@@ -31,15 +33,19 @@ function App() {
 
 	return (
 		<div className="App">
-			<header className="App-header">
-				<h1>My portfolio !</h1>
-				{/* Calling a data from setdata for showing */}
-				<p>{homePage.name}</p>
-				<p>{homePage.age}</p>
-				<p>{homePage.date}</p>
-				<p>{homePage.programming}</p>
+			<BrowserRouter>
+        		<Routes>
+					<header className="App-header">
+						<Route path="/" element={<Layout />} />
+						<h1>My portfolio !</h1>
+						<p>{homePage.name}</p>
+						<p>{homePage.age}</p>
+						<p>{homePage.date}</p>
+						<p>{homePage.programming}</p>
 
-			</header>
+					</header>
+				</Routes>
+			</BrowserRouter>
 		</div>
 	);
 }

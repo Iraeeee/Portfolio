@@ -5,13 +5,21 @@
 from flask import Flask, render_template, request, url_for, redirect, session, abort, redirect
 import os
 import utils
+import datetime
 
 app = Flask(__name__)
 app.secret_key = 'key'
 
-@app.route("/", methods=['post', 'get'])
-def index():
+x = datetime.datetime.now()
 
-    return "Hello world !"
+@app.route('/data')
+def homePage():
 
-app.run()
+    return {
+        'Name':"Antoine", 
+        "Age":"18",
+        "Date":x, 
+        "programming":"HTML, CSS, REACT & PYTHON"
+        }
+
+app.run(debug=True)

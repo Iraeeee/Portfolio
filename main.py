@@ -17,4 +17,4 @@ try:
 
 except Exception as excep:
 
-    if debugMode.status() == True: print(excep)
+    if debugMode.status(): print(excep)

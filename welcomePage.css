@@ -142,7 +142,7 @@ input::-moz-focus-inner {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   }
   .buttons {
-  margin-top: 50px;
+  margin-top: 50%;
   text-align: center;
   }
   .blob-btn {

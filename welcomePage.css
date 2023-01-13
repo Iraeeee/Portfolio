@@ -33,7 +33,7 @@ body {
 .container {
   display: flex;
   height: 320px;
-  margin: 0 auto;
+  margin: 30px;
   width: 640px;
 }
 @media (max-width: 50%) {
@@ -147,10 +147,10 @@ input::-moz-focus-inner {
   text-align: center;
   }
   .blob-btn {
-  z-index: 1;
   position: relative;
   padding: 20px 46px;
-  margin-bottom: 300px;
+  margin-top: 20%;
+  margin-left: 45%;
   text-align: center;
   text-transform: uppercase;
   color: #0fe0f5;

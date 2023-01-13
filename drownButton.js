@@ -39,5 +39,3 @@
         document.body.appendChild(css);
 
       }
-
-document.getElementById("create-wave-button").addEventListener("click", createWaterWave);

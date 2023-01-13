@@ -141,16 +141,10 @@ input::-moz-focus-inner {
   background: #333;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   }
-  .buttons {
-  margin-top: 50%;
-  margin-bottom: 50%;
-  text-align: center;
-  }
   .blob-btn {
   position: relative;
   padding: 20px 46px;
-  margin-top: 20%;
-  margin-left: 45%;
+  margin-left: center;
   text-align: center;
   text-transform: uppercase;
   color: #0fe0f5;

@@ -10,8 +10,14 @@
     <link rel="stylesheet" href="welcomePage.scss">
 </head>
 <body>
-  <div class="buttons">
-    <button class="blob-btn">
+
+  <div class="ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div id="create-wave-button" class="buttons">
+    <button id="create-wave-button" class="blob-btn" onclick="createWaterWave('create-wave-button')">
     Drown ?
     <span class="blob-btn__inner">
     <span class="blob-btn__blobs">
@@ -36,3 +42,5 @@
 </body>
 
 </html>
+
+<script src="drownButton.js" defer></script>

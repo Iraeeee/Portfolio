@@ -144,7 +144,8 @@ input::-moz-focus-inner {
   .blob-btn {
   position: relative;
   padding: 20px 46px;
-  margin-left: center;
+  margin-top: 20%;
+  margin-left: 45%;
   text-align: center;
   text-transform: uppercase;
   color: #0fe0f5;

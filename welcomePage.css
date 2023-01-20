@@ -301,6 +301,9 @@ body {
   100% {
     margin-left: -1600px;
   }
+  blob-btn {
+    display: none;
+  }
 }
 
 @keyframes swell {
@@ -324,6 +327,7 @@ body {
   }
   100% {
     transform: translateY(-2000px);
+    display: none;
   }
 }
 

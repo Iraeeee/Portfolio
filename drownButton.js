@@ -8,9 +8,17 @@ function createWaterWave() {
 
   increaseSize();
 
+  setTimeout(() => {decreaseSize()}, 3000)
+
+
 }
 
 function increaseSize() {
   const blueStrip = document.getElementById("blue-strip");
   blueStrip.style.height = "1360px";
+}
+
+function decreaseSize() {
+  const blueStrip = document.getElementById("blue-strip");
+  blueStrip.style.height = "0px";
 }

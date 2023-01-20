@@ -350,3 +350,13 @@ body {
     transform: translateY(-2000px);
   }
 }
+
+@keyframes slideDown {
+  from {
+    transform: translateY(2000);
+  }
+  to {
+    transform: translateY(0);
+  }
+  
+}

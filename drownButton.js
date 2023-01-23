@@ -10,6 +10,8 @@ function createWaterWave() {
 }
 
 function increaseSize() {
+
   const blueStrip = document.getElementById("blue-strip");
   blueStrip.style.height = "1360px";
+  
 }

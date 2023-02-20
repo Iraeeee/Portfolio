@@ -1,0 +1,74 @@
+nav {
+    background-color: #F6E5C9;
+    border-radius: 20px;
+    padding: 20px;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+    margin: 0 auto;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  li {
+    margin: 0 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Inter UI', sans-serif;
+  }
+  a:hover {
+    color: #f00;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .island {
+    margin-top: 5%;
+    background-color: #F6E5C9;
+    border-radius: 20px;
+    padding: 20px;
+    opacity: 0;
+    color: #333;
+    animation: fade-in 1s ease-in-out forwards;
+    font-family: 'Inter UI', sans-serif;
+    justify-content: center;
+  }
+
+  a {
+    margin: 0 10px;
+    animation: fade-in 1s ease-in-out forwards;
+    font-family: 'Inter UI', sans-serif;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Inter UI', sans-serif;
+  }
+  .profile-img {
+    border-radius: 50%;
+    margin: 10px;
+    height: auto;
+    width: 175px;
+    max-width: 70%;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

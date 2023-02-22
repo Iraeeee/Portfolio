@@ -59,31 +59,31 @@ nav {
     color: #333;
     font-family: 'Inter UI', sans-serif;
   }
-
-  @media (max-width: 767px) {
-    .profile-img {
+  .profile-img {
         display: flex;
         align-items: center;
         border-radius: 50%;
         height: auto;
-        width: 175px;
+        max-height: 15%;
+        width: 15%;
         max-width: 70%;
-        margin-left: 25%;
-      }
-  }
-
-  @media (min-width: 768px) {
-    .profile-img {
+        min-width: 100px;
+        margin-left: 42.5%;
+    }
+    @media  (max-width: 767px) {
+      .profile-img {
         display: flex;
         align-items: center;
         border-radius: 50%;
         height: auto;
-        width: 175px;
+        max-height: 15%;
+        width: 15%;
         max-width: 70%;
-        margin-left: 45.3%;
+        min-width: 100px;
+        margin-left: 37%;
       }
-  }
-
+    }
+      
   @keyframes fade-in {
     from {
       opacity: 0;

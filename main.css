@@ -157,6 +157,7 @@ input::-moz-focus-inner {
       border: none;
       transition: color 0.5s;
       cursor: pointer;
+    }
   }
   @media (min-width: 768px) {
     .blob-btn {

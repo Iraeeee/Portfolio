@@ -141,42 +141,25 @@ input::-moz-focus-inner {
   background: #333;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   }
-  @media (max-width: 767px) {
-    .blob-btn {
-      position: relative;
-      padding: 20px 46px;
-      margin-top: 20%;
-      margin-left: 32%;
-      text-align: center;
-      text-transform: uppercase;
-      color: #0fe0f5;
-      font-size: 16px;
-      font-weight: bold;
-      background-color: transparent;
-      outline: none;
-      border: none;
-      transition: color 0.5s;
-      cursor: pointer;
-    }
+
+  .blob-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0fe0f5;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
   }
-  @media (min-width: 768px) {
-    .blob-btn {
-      position: relative;
-      padding: 20px 46px;
-      margin-top: 20%;
-      margin-left: 45%;
-      text-align: center;
-      text-transform: uppercase;
-      color: #0fe0f5;
-      font-size: 16px;
-      font-weight: bold;
-      background-color: transparent;
-      outline: none;
-      border: none;
-      transition: color 0.5s;
-      cursor: pointer;
-      }
-  }
+
   .blob-btn:before {
   content: "";
   z-index: 1;

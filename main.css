@@ -352,7 +352,7 @@ body {
   background-color: #015871;
   position: absolute;
   bottom: 0;
-  transition: height 2s linear;
+  transition: height 1.8s linear;
   transform-origin: top;
 }
 

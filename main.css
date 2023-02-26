@@ -215,7 +215,7 @@ input::-moz-focus-inner {
   transition: transform 0.45s;
   }
   @supports (filter: url('#goo')) {
-  transform: translate3d(0, 150%, 0) scale(1.4);
+    transform: translate3d(0, 150%, 0) scale(1.4);
   }
   .blob-btn__blob:nth-child(1) {
   left: 0%;

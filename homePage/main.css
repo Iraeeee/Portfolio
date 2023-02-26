@@ -139,19 +139,6 @@ nav {
         left: 0;
       }
     }
-    @media  (max-width: 767px) {
-      .profile-img {
-        display: flex;
-        align-items: center;
-        border-radius: 50%;
-        height: auto;
-        max-height: 15%;
-        width: 15%;
-        max-width: 70%;
-        min-width: 100px;
-        margin-left: 37%;
-      }
-    }
       
   @keyframes fade-in {
     from {

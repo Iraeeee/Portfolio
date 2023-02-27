@@ -9,7 +9,7 @@ function createWaterWave() {
 
   setTimeout(() => {
     waterWave.style.animation = "waveUp 3s linear";
-  }, 150);
+  }, 50);
 
   setTimeout(() => {
     waveButton.style.display = "none";

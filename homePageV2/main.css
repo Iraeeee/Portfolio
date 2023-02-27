@@ -156,9 +156,9 @@ body {
 }
 
 nav {
+  margin-left: 55%;
   position: flex;
-  margin-right: 5%;
-  margin-left: 50%;
+  min-width: 60px;
   max-width: 30%;
   background-color: #F6E5C9;
   border-radius: 50px;
@@ -183,6 +183,8 @@ li {
 }
 
 a {
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 15px;
   font-weight: bold;
 

@@ -14,16 +14,4 @@ window.addEventListener('load', function() {
     
     typeWriter();
 
-    const navBar = document.getElementsByClassName("nav-bar")
-    setTimeout(() => {
-        let opacity = 0;
-        const interval = setInterval(() => {
-        opacity += 0.05;
-        navBar.style.opacity = opacity;
-        if (opacity >= 1) {
-            clearInterval(interval);
-        }
-        }, 50);
-      }, 50);
-
 });

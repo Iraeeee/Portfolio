@@ -112,6 +112,7 @@ nav {
   }
 
   .profile-img {
+    text-align: center;
     border-radius: 50%;
     height: auto;
     max-height: 15%;

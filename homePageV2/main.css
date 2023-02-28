@@ -72,7 +72,7 @@ html, body {
   left: 0;
   max-width: 40%;
   min-width: 10%;
-  height: 130%;
+  height: 100%;
 
   background-color: #F6E5C9;
   animation: fade-in 0.5s ease-in-out forwards;
@@ -160,19 +160,40 @@ html, body {
 header {
   position: relative;
 }
+@media (max-width: 768px) {
 
-nav {
-  position: absolute;
-  margin-top: 1%;
-  right: 0;
-  transform: translateX(-50%);
-  min-width: 145px;
-  max-width: 30%;
-  background-color: #F6E5C9;
-  border-radius: 50px;
-  padding: 7px;
-  opacity: 0;
-  animation: fade-in 1s ease-in-out forwards;
+  nav {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%);
+    min-width: 145px;
+    max-width: 30%;
+    background-color: #F6E5C9;
+    border-radius: 50px;
+    padding: 7px;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  
+}
+
+@media (min-width: 769px) {
+
+  nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    min-width: 145px;
+    max-width: 30%;
+    background-color: #F6E5C9;
+    border-radius: 50px;
+    padding: 7px;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+  }
+
 }
 
 ul {

@@ -11,6 +11,7 @@
 }
 
 .wave {
+  z-index: 997;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
   position: absolute;
   top: -198px;

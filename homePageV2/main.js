@@ -37,6 +37,8 @@ document.getElementById('scroll-down-btn-id').addEventListener('click', function
       top: window.innerHeight,
       behavior: 'smooth'
     });
+    var element = document.getElementById("scroll-down-btn-id-2");
+    element.classList.add("animate");
   });
 
 var fishALeft = document.getElementById("fishALeft");

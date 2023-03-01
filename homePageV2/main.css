@@ -213,9 +213,10 @@ a:hover {
 }
 
 #scroll-down-btn {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
+  margin-top: 100%;
+  position: flex;
+  align-self: center;
+
   z-index: 999;
   border: none;
   background-color: #015871;
@@ -358,7 +359,7 @@ a:hover {
 }
 
 #fishALeft {
-  margin-top: 35%;
+  margin-top: 50%;
   width: 300px;
   height: 180px;
   background-size: 100% 100%;

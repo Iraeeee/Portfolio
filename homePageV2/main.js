@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
 
     var i = 0;
     var txt = "Hi! I'm Antoine Lutfalla. Welcome to my Portfolio ! Enjoy your stay.";
-    var speed = 50;
+    var speed = 20;
 
     function typeWriter() {
         if (i < txt.length) {

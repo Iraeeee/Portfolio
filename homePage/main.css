@@ -452,17 +452,17 @@ a:hover {
 }
 
 .mini-island {
+  margin: 0 auto;
   max-width: 33.5%;
   background-color: #2c8999;
   color: white;
   padding: 10px;
   border-radius: 30px;
   margin: 5px;
-  width: fit-content;
 }
 
 .mini-island-container-1 {
-  margin-top: 1.5%;
+  margin-top: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -475,6 +475,19 @@ a:hover {
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .island-text{
+    font-size: 15px;
+  }
+  .island-title{
+    font-size: 20px
+  }
+  
+  .mini-island-container-1,
+  .mini-island-container-2 {
+    flex-wrap: wrap;
+  }
+}
 
 @keyframes slide-in {
   from {

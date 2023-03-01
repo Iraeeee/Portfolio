@@ -13,7 +13,7 @@ function createWaterWave() {
 
   setTimeout(() => {
     waveButton.style.display = "none";
-    window.location.href = 'homePageV2/index.html';
+    window.location.href = 'homePage/index.html';
   }, 3000);
 }
 

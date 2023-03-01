@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
 
     var i = 0;
     var txt = "Hi! I'm Antoine Lutfalla. Welcome to my Portfolio ! Enjoy your stay.";
-    var speed = 60;
+    var speed = 50;
 
     function typeWriter() {
         if (i < txt.length) {
@@ -10,15 +10,27 @@ window.addEventListener('load', function() {
             i++;
             setTimeout(typeWriter, speed);
         }else {
-            var element = document.getElementById("scroll-down-btn-id");
-            element.classList.add("animate");
+            var submarineI = 0;
+            var submarineText = "Click the submarine to know more about me. Let's delve deeper!";
+            var submarineSpeed = 20;
+            function displaySubmarineText() {
+                if (submarineI < submarineText.length) {
+                  document.getElementById("submarine-text").innerHTML += submarineText.charAt(submarineI);
+                  submarineI++;
+                  setTimeout(displaySubmarineText, submarineSpeed);
+                }else {
+                    var element = document.getElementById("scroll-down-btn-id");
+                    element.classList.add("animate");
+                }
+              }
+              
+            displaySubmarineText();
         }
     }
     
     typeWriter();
 
 });
-
 
 document.getElementById('scroll-down-btn-id').addEventListener('click', function() {
     window.scrollTo({

@@ -9,6 +9,9 @@ window.addEventListener('load', function() {
             document.getElementById("welcome-text").innerHTML += txt.charAt(i);
             i++;
             setTimeout(typeWriter, speed);
+        }else {
+            var element = document.getElementById("scroll-down-btn-id");
+            element.classList.add("animate");
         }
     }
     
@@ -16,7 +19,8 @@ window.addEventListener('load', function() {
 
 });
 
-document.getElementById('scroll-down-btn').addEventListener('click', function() {
+
+document.getElementById('scroll-down-btn-id').addEventListener('click', function() {
     window.scrollTo({
       top: window.innerHeight,
       behavior: 'smooth'

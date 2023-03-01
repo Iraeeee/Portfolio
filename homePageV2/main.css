@@ -212,22 +212,40 @@ a:hover {
   color: #015871;
 }
 
-#scroll-down-btn {
+.scroll-down-btn {
   margin-top: 100%;
   position: flex;
   align-self: center;
 
+  width: 30%;
+  height: 10%;
+
+  background-image: url("../src/submarine.png");
+  background-size: cover;
+  background-position: center; 
+
+  background-color: #015871;
+  border-radius: 50px;
+  padding: 7px;
+
   z-index: 999;
   border: none;
-  background-color: #015871;
-  color: #fff;
-  padding: 10px 15px;
-  font-size: 20px;
   cursor: pointer;
+  opacity: 0;
 }
 
-#scroll-down-btn:hover {
-  background-color: #555;
+.scroll-down-btn.animate {
+  opacity: 1;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fa-arrow-down {

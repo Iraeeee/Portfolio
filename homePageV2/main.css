@@ -217,7 +217,8 @@ a:hover {
   position: flex;
   align-self: center;
 
-  width: 30%;
+  max-width: 150px;
+  width: 50%;
   height: 10%;
 
   background-image: url("../src/submarine.png");

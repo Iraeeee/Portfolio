@@ -363,13 +363,23 @@ header {
   }
 }
 
+.island-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-height: 80%;
+}
+
 .island {
   margin: 0 auto;
+  max-height: 70vh;
   max-width: 70%;
-  margin-top: 5vh;
-  background-color: #2c8999;
+  margin-top: 2.5vh;
+  background-color: transparent;
   border-radius: 50px;
-  padding: 3px;
+  padding: 10px;
   color: #333;
   animation: fade-in 1s ease-in-out forwards;
   justify-content: center;
@@ -406,6 +416,7 @@ header {
 }
 
 .mini-island {
+  max-height: fit-content;
   margin: 0 auto;
   max-width: 33.5%;
   background-color: #2c8999;
@@ -429,24 +440,8 @@ header {
   align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .island {
-    margin-top: 0vh;
-  }
-  .island-text{
-    font-size: 15px;
-  }
-  .island-title{
-    font-size: 20px
-  }
-  
-  .mini-island-container-1,
-  .mini-island-container-2 {
-    flex-wrap: wrap;
-  }
-}
-
 .submarine-2-container {
+  top: 80vh;
   position: absolute;
   width: 70vh;
   height: 70vh;
@@ -519,6 +514,27 @@ header {
 
     transform: rotate(-30deg);
     position: relative;
+  }
+
+  @media only screen and (max-width: 768px) { 
+    .island {
+      max-width: 90vh;
+    }
+    .island-text{
+      font-size: 13px;
+    }
+    .island-title{
+      font-size: 17px
+    }
+  
+    .sand-island-1-image {
+      margin-left: 0vh;
+    }
+    
+    .mini-island-container-1,
+    .mini-island-container-2 {
+      max-width: 90vh;
+    }
   }
 
   .scroll-down-btn-3 {

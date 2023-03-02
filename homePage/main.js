@@ -11,7 +11,7 @@ window.addEventListener('load', function() {
             setTimeout(typeWriter, speed);
         }else {
             var submarineI = 0;
-            var submarineText = "Click the submarine to know more about me. Let's delve deeper!";
+            var submarineText = "Click the submarine to view my skills. Let's delve deeper!";
             var submarineSpeed = 20;
             function displaySubmarineText() {
                 if (submarineI < submarineText.length) {
@@ -35,6 +35,13 @@ window.addEventListener('load', function() {
 document.getElementById('scroll-down-btn-id').addEventListener('click', function() {
     window.scrollTo({
       top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  });
+
+  document.getElementById('scroll-down-btn-id-2').addEventListener('click', function() {
+    window.scrollTo({
+      top: 2*window.innerHeight,
       behavior: 'smooth'
     });
   });

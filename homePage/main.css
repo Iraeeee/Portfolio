@@ -260,10 +260,14 @@ a:hover {
 }
 
 .bubble-container {
-  overflow-x: hidden;
-  position: relative;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
   width: 100%;
-  height: 100vh;
+
+  overflow-x: hidden;
+  height: 200%;
   overflow: hidden;
 }
 
@@ -366,13 +370,21 @@ a:hover {
 }
 
 .section-1 {
+  position: relative;
   width: 100vh;
   height: 100vh;
 }
 
+
 .section-2 {
-  position: absolute;
-  bottom: -100%;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.section-3 {
+  position: relative;
+  height: 100vh;
   width: 100%;
 }
 
@@ -417,7 +429,6 @@ a:hover {
   padding: 3px;
   color: #333;
   animation: fade-in 1s ease-in-out forwards;
-  font-family: 'oceanFont', sans-serif;
   justify-content: center;
 }
 
@@ -489,6 +500,44 @@ a:hover {
   }
 }
 
+.submarine-2-container {
+  position: relative;
+}
+
+.sand-island-1 {
+  max-height: fit-content ;
+  margin-left: 0.5%;
+  max-width: fit-content;
+  margin-top: 1.5%;
+  background-color: #F6E5C9;
+  border-radius: 30px;
+  padding: 1px;
+  color: #000000;
+  animation: fade-in 1s ease-in-out forwards;
+  justify-content: center;
+}
+
+.sand-island-1-text {
+  margin: 15px;
+  font-size: 15px;
+  color: #000000;
+
+  text-align: center;
+  justify-content: center;  
+  align-items: center;
+}
+
+.sand-island-1-image {
+  margin-top: -17vh;
+  margin-left: -3vh;
+  position: absolute;
+  width: 40vh;
+  height: 40vh;
+  transform: scaleX(-1);
+  transform: rotate(180deg);
+  object-fit: cover;
+}
+
 @keyframes slide-in {
   from {
     opacity: 0;
@@ -501,6 +550,31 @@ a:hover {
 }
 
   .scroll-down-btn-2 {
+    position: fixed;
+    top: 90vh;
+    left: -100px;
+  
+    max-width: 300px;
+    width: 100%;
+    height: 10%;
+  
+    background-image: url("../src/submarine.png");
+    background-size: cover;
+    background-position: center; 
+  
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    padding: 7px;
+  
+    z-index: 999;
+    border: none;
+    cursor: pointer;
+
+    transform: rotate(-30deg);
+    position: relative;
+  }
+
+  .scroll-down-btn-3 {
     position: fixed;
     top: 90vh;
     left: -100px;

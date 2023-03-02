@@ -430,6 +430,9 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+  .island {
+    margin-top: 0vh;
+  }
   .island-text{
     font-size: 15px;
   }

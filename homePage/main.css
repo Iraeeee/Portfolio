@@ -444,7 +444,7 @@ header {
 }
 
 .submarine-2-container {
-  position: relative;
+  position: absolute;
   width: 70vh;
   height: 70vh;
 }
@@ -520,7 +520,7 @@ header {
 
   .scroll-down-btn-3 {
     position: fixed;
-    top: 90vh;
+    top: 80vh;
     left: -100px;
   
     max-width: 300px;

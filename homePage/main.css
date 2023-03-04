@@ -441,7 +441,7 @@ header {
 }
 
 .submarine-2-container {
-  position: absolute;
+  position: block;
   width: 70vh;
   height: 70vh;
 }
@@ -534,33 +534,8 @@ header {
     .mini-island-container-2 {
       max-width: 90vh;
     }
-  }
-
-  @media only screen and (max-width: 450px) { 
-    .island {
-      max-width: 90vh;
-    }
-    .island-text{
-      font-size: 13px;
-    }
-    .island-title{
-      font-size: 17px
-    }
-  
-    .sand-island-1-image {
-      margin-left: 0vh;
-    }
-    
-    .mini-island-container-1,
-    .mini-island-container-2 {
-      max-width: 90vh;
-    }
-
-    .submarine-2-container {
-    }
 
   }
-
   .scroll-down-btn-3 {
     position: fixed;
     top: 80vh;

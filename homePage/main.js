@@ -37,17 +37,6 @@ document.getElementById('scroll-down-btn-id').addEventListener('click', function
       top: window.innerHeight,
       behavior: 'smooth'
     });
-    var element = document.documentElement;
-    function enterFullscreen() {
-      if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-        if (element.requestFullscreen) {
-          element.requestFullscreen();
-        } else if (element.webkitRequestFullscreen) {
-          element.webkitRequestFullscreen();
-        }
-      }
-    }
-    enterFullscreen();
   });
 
   document.getElementById('scroll-down-btn-id-2').addEventListener('click', function() {

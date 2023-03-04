@@ -442,6 +442,7 @@ header {
 
 .submarine-2-container {
   position: block;
+  margin-top: 10vh;
   width: 70vh;
   height: 70vh;
 }
@@ -533,6 +534,10 @@ header {
     .mini-island-container-1,
     .mini-island-container-2 {
       max-width: 90vh;
+    }
+
+    .submarine-2-container {
+      margin-top: 0vh;
     }
 
   }

@@ -537,6 +537,9 @@ header {
       max-width: 90vh;
     }
 
+    .submarine-2-container {
+      margin-top: 5%;
+    }
   }
 
   .scroll-down-btn-3 {

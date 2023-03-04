@@ -441,7 +441,6 @@ header {
 }
 
 .submarine-2-container {
-  top: 80vh;
   position: absolute;
   width: 70vh;
   height: 70vh;
@@ -558,7 +557,6 @@ header {
     }
 
     .submarine-2-container {
-      top: 60vh;
     }
 
   }
